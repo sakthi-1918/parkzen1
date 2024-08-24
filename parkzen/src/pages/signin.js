@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import carImage from '../Assets/car.png'; // Adjust this path as needed
+import car from '../assets/car.png'; // Adjust this path as needed
 
 const LoginSignup = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -26,9 +26,10 @@ const LoginSignup = () => {
     return (
         <div style={{ display: 'flex', minHeight: '100vh' }}>
             {/* Left half with car image */}
+            <img src={car}/>
             <div style={{
                 flex: '1',
-                // backgroundImage: url(${carImage}),
+                // backgroundImage:,
                 backgroundSize: 'contain', // Ensures the image retains its aspect ratio
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
