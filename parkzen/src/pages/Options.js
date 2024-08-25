@@ -8,8 +8,7 @@ function Options() {
     <div>
       
       <Navibar />
-      <div style={{paddingTop:'90px'}}>
-      <UserCard/>
+      <div style={{paddingTop:'90px',position:'relative'}}>
       <UserCard/>
       </div>
     </div>
