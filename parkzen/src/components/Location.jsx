@@ -5,7 +5,7 @@ import HoverableButton from './button';
 
 export default function UserCard() {
   return (
-    <div className="container mt-4" style={{position:'relative'}}>
+    <div className="container mt-4">
       <div className="row justify-content-center">
         <div className="col-md-8"> {/* Adjust this column width to center align */}
           {Locationoption.map((user, index) => (

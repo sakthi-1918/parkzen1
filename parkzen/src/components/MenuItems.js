@@ -7,7 +7,7 @@ export const MenuItems=[
     },
     {
         title:"Parking Areas",
-        url:"/location",
+        url:"/loc",
         cName:"nav-links",
         icon:"fa-solid fa-car"
     },
