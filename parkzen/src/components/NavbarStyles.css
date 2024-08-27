@@ -47,6 +47,12 @@
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
+.nav-links.active {
+    background-color: rgb(15, 15, 94);
+    color: #ff6347;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
 .nav-links-mobile{
     display:none;
 }

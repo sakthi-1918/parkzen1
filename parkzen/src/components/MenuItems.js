@@ -18,7 +18,7 @@ export const MenuItems=[
         icon:"fa-solid fa-circle-info"
     },
     {
-        title:"Contact",
+        title:"Profile",
         url:"/contact",
         cName:"nav-links",
         icon:"fa-solid fa-address-book"
