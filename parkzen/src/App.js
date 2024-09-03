@@ -7,6 +7,7 @@ import Home from './pages/Home.js';
 import ProfilePage from './pages/ProfilePage.js';
 
 
+
 function App() {
   return (
       <Routes>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/slots" element={<ParkingLot />} />
         <Route path="/loc" element={<Options />} />
         <Route path="/profile" element={<ProfilePage />} /> {/* Profile route */}
+        
       </Routes>
   );
 }

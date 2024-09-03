@@ -8,6 +8,7 @@ body {
 
 .user-card-full {
     overflow: hidden;
+    width: 100%; /* Make the card full width */
 }
 
 .card {
@@ -15,14 +16,7 @@ body {
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
     border: none;
     margin-bottom: 30px;
-}
-
-.m-r-0 {
-    margin-right: 0px;
-}
-
-.m-l-0 {
-    margin-left: 0px;
+    width: 100%; /* Ensure the card takes full width */
 }
 
 .user-card-full .user-profile {
