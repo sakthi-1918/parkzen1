@@ -19,7 +19,7 @@ export const MenuItems=[
     },
     {
         title:"Profile",
-        url:"/contact",
+        url:"/profile",
         cName:"nav-links",
         icon:"fa-solid fa-address-book"
     },
