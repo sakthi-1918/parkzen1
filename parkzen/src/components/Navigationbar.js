@@ -38,7 +38,11 @@ const Navibar = () => {
                         </Link>
                     </li>
                 ))}
-                <button>Logout</button>
+                 <li>
+                    <Link to="/">
+                        <button className="logout-btn">Logout</button>
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

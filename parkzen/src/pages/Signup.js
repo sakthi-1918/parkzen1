@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './signin.css';
+import './Signup.css';
+import { Link } from 'react-router-dom';
 import staff from '../assets/staff.webp'; // Add appropriate paths for images
 import student from '../assets/student.jpg'; // Add appropriate paths for images
 
-const SignIn = () => {
+const Signup = () => {
     const [accountType, setAccountType] = useState('Parent'); // Default is Parent
     const [credentials, setCredentials] = useState({
+        name: '',
         email: '',
-        password: ''
+        password: '',
+        confirmPassword: ''
     });
 
     const handleAccountTypeChange = (type) => {
@@ -24,13 +26,13 @@ const SignIn = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(`Logging in as ${accountType}`);
+        console.log(`Signing up as ${accountType}`);
         console.log('Credentials:', credentials);
         // Insert logic for API call or form submission
     };
 
     return (
-        <div className="sign-in-container">
+        <div className="sign-up-container">
             <h3>Choose Account Type</h3>
             <div className="account-type-selection">
                 <div
@@ -48,8 +50,18 @@ const SignIn = () => {
                     <p>Staff/Student</p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit} className="sign-in-form">
+            <form onSubmit={handleSubmit} className="sign-up-form">
                 <p3>Hello {accountType.toLowerCase()}! Please fill out the form below to get started</p3>
+                <div className="form-group">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        value={credentials.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
                 <div className="form-group">
                     <input
                         type="email"
@@ -70,15 +82,25 @@ const SignIn = () => {
                         required
                     />
                 </div>
-                <button type="submit" className="login-btn">
-                <Link to="/home" style={{ color: 'inherit', textDecoration: 'none' }}>Login</Link></button>
+                <div className="form-group">
+                    <input
+                        type="password"
+                        name="confirmPassword"
+                        placeholder="Confirm Password"
+                        value={credentials.confirmPassword}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <button type="submit" className="signup-btn">
+                    <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Sign Up</Link></button>
+
                 <div className="extra-links">
-                    <p>No account? <Link to="/signup">Signup</Link></p> {/* Use Link for navigation */}
-                    <p><a href="#forgot">Forgot Password?</a></p>
+                    <p>Already have an account? <a href="/">Sign In</a></p>
                 </div>
             </form>
         </div>
     );
 };
 
-export default SignIn;
+export default Signup;
