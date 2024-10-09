@@ -7,6 +7,8 @@ import Home from './pages/Home.js';
 import ProfilePage from './pages/ProfilePage.js';
 import SignIn from './pages/signin.js';
 import Signup from './pages/Signup.js';
+import AboutPage from './pages/Aboutpage.js';
+import View from './pages/View.js';
 
 
 
@@ -18,7 +20,9 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/slots" element={<ParkingLot />} />
         <Route path="/loc" element={<Options />} />
-        <Route path="/profile" element={<ProfilePage />} /> {/* Profile route */}
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/about" element={<AboutPage />} /> 
+        <Route path="/view" element={<View />} />  {/* Profile route */}
         
       </Routes>
   );

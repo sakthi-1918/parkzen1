@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutPage.css';
+import '../pages/Aboutpage.css';
 import parkingLot from '../assets/parkingLot.jpeg'; // Import your images
 
 const Section1 = () => {
